@@ -33,6 +33,23 @@
         </label>
     </form>
 
+
+    <div>
+        <span>3、文字国际化表达式</span><br/>
+        <form action="/changeLanguage2" method="get">
+            <select name="lang">
+                <option value=""></option>
+                <option  th:selected="${lang=='zh'}" value="zh">中文</option>
+                <option  th:selected="${lang=='en'}" value="en">English</option>
+            </select>
+
+            <button>切换语言</button>
+        </form>
+
+        <br/>
+        <span th:text="#{welcome.backhome}"></span><br/>
+    </div>
+
     <script>
 
     </script>
