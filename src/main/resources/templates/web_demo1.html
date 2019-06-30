@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>web示例</title>
+
+    <!-- css 引用-->
+    <link rel="stylesheet" type="text/css" th:href="@{~/static/css/table.brief.css}"/>
+
+    <!-- js 引用 -->
+    <script th:src="@{~/static/js/jquery_3.1.0_jquery.min.js}"></script>
+    <script th:src="@{~/static/js/jquery.multi-select.js}"></script>
+
+</head>
+<style type="text/css">
+    .div-tbl{text-align: center;margin-top: 30px;}
+    .div-btn{text-align: center;margin-top: 20px;}
+    .div-select{
+        padding-bottom: 10px;
+        padding-left: 111px;
+    }
+    /* 自定义 */
+    .red-tip{color: red;float: right;text-align: left; position: absolute;}
+</style>
+
+<body>
+    <form th:action="@{/orc/createTbl}" method="post" class="basic-grey">
+        <h1>web样例</h1>
+
+        <label>
+            <span class="lab-text">Hello :</span>
+            <input id="owner-w" type="text" name="owner" placeholder="Hello,World" value=""/>
+        </label>
+    </form>
+
+    <script>
+
+    </script>
+</body>
+
+
+</html>
